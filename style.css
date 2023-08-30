@@ -1,0 +1,419 @@
+
+
+
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    padding-bottom: 0;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+    
+}
+
+
+
+/*----------------------------------------------------Header---------------------------------------------------*/
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('image.avif');
+    background-size: cover;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.main-name{
+    width:50px;
+    cursor: pointer;
+    margin: 30px 0;
+    font-family: Playfair Display, arial;
+    font-weight: 500;
+    font-size: 30px;
+    color: gold;
+
+}
+.menu-icon{
+    width:2%;
+    display: none;
+    cursor: pointer;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: roboto, arial;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ff5ea2;
+}
+.row{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    text-align: center;
+}
+.col-1 h2{
+    color: rgb(236, 201, 4);
+    font-size: 62px;
+}
+.col-1 p{
+
+    color:#f6f6f6;
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 21px;
+}
+.Button-slide-down{
+    color: rgb(236, 201, 4);
+    border-radius: 3px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 100px;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+    }
+    .Button-slide-down:hover{
+    border: 1px solid rgb(236, 201, 4);
+    background: rgb(236, 201, 4);
+    transition: 0.5s;
+    color: white;
+    }
+
+
+
+    /* ------------------------------------------- Drop down menu for mobile screen -------------------------------------------*/
+
+
+@media only screen and (max-width: 600px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgb(255, 215, 16),rgb(255, 179, 0));
+        position: absolute;
+        top: 75px;
+        right:0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:rgb(78, 78, 74);
+    }
+    .menu-icon{
+        width: 8%;
+        display: block;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    /*------------------------------------------------- Title in header for mobile screen---------------------------------------------*/
+
+    .col-1 h2{
+        color: rgb(236, 201, 4);
+        font-size: 40px;
+    }
+    .col-1 p{
+    
+        color:#f6f6f6;
+        margin: 30px 0;
+        font-size: 15px;
+        line-height: 21px;
+    }
+}
+
+
+/* header {
+min-height: 100vh;
+width: 100%;
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('image.avif');
+background-position: center;
+background-size: cover;
+position: relative;
+
+
+
+}
+
+.main-name{
+font-family: Playfair Display, arial;
+font-weight: 500;
+font-size: 34px;
+width: 100px;
+padding-left: 20px;
+color: gold;
+} */
+
+/* @media only screen and (max-width: 600px){
+    .main-name{
+        font-size: 19px;
+        }
+
+} */
+
+/* .nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 2% 6%;
+}
+.nav-links{
+flex: 1;
+text-align: right;
+cursor: pointer;
+}
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 4px 12px;
+position: relative;
+padding-top: 15px;
+}
+.nav-links ul li, .right-nav{
+color: white;
+text-decoration: none;
+font-size: 13px;
+font-family: roboto, arial;
+font-weight: 500;
+}
+.nav-links ul li::after{
+content: '';
+max-width: 0%;
+height: 2px;
+background: gold;
+display: block;
+margin: auto;
+transition: 0.5s;
+padding-bottom: 1px;
+}
+.nav-links ul li:hover::after{
+max-width: 100%;
+}
+@media only screen and (max-width: 600px){
+    .nav{
+        padding: 5% 6%;
+    }
+
+    .nav-links ul{
+        width: 100%;
+        background: linear-gradient(rgba(255, 239, 16, 0.7),rgba(164, 171, 201, 0.7));
+        position: absolute;
+        top: 49px;
+        right: 0;
+        z-index: 2;
+        margin-right: 33px;
+    }
+    .nav-links ul li{
+        
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+ */
+
+
+
+
+/*---------------------------------------------Cards--------------------------------------------------*/
+
+
+/*---------------------------------- Screen for mobile less than < 300 px ----------------------------*/
+@media (max-width: 300px){
+
+    .beach-card{
+        font-size: 15px;
+    }
+
+    .beach-card-info{
+
+        font-size: 15px;
+    }
+
+
+    /*Parent = cards class*/ 
+    .cards{
+
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    /*Child = cards-count   100% for small screen */
+    .cards-count{
+        flex-basis: 100%;
+    }
+
+}
+
+/*---------------------------------- Screen for mobile >301px between  < 600px -------------------------------*/
+@media (min-width: 301px) and (max-width: 600px) {
+    .beach-card{
+        font-size: 20px;
+    }
+    
+    .beach-card-info{
+
+        font-size: 20px;
+    }
+    
+    /*Parent = cards class*/ 
+    .cards{
+
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    /*Child = cards-count   100% for small screen */
+    .cards-count{
+        flex-basis: 100%;
+    }
+
+}
+
+/*---------------------------------- Screen for desktop ro browser > 601 px ----------------------------*/
+@media (min-width: 601px){
+
+    .beach-card{
+        font-size: 20px;
+    }
+    
+    .beach-card-info{
+
+        font-size: 20px;
+    }
+    
+
+    /*Parent = cards class*/ 
+    .cards{
+
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center 
+    }
+    /*Child = cards-count    25% for larger screen*/
+    .cards-count{
+        flex-basis: 25%;
+    }
+
+
+}
+
+/*-------------------------------------- Card essensial proprety on all sizes of screen --------------------------------*/
+.beach-card{
+    text-align: center;
+    margin-top: 50px;
+    color: goldenrod;
+}
+
+.beach-card-info{
+    line-height: 20px;
+    color: gray;
+    margin: 15px;
+}
+
+.cards{
+    
+    margin-top: 50px;
+
+} 
+
+.cards-count{
+    display: grid;
+    padding-right: 2.5px;
+    padding-bottom: 5px;
+    padding-left: 2.5px;
+    margin: 18px;
+    border: 5px solid rgb(209, 206, 206);
+    border-radius: 10px;
+    background-color: #48dbfb;
+    background-image: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%);
+}
+.cards-name{
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+    
+.cards-image{
+width: 100%;
+height: 150px;
+border-radius: 3px;
+}
+
+.cards-para{
+font-size: 15px;
+padding-top: 18px;
+}
+
+.cards-count:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+    transition: 0.15s;
+}
+
+
+
+
+/*------------------------------------------------Footer----------------------------------------------------*/
+
+.down-bar{
+background-color: #d3d3d3;
+border: 2px solid #d3d3d3;
+padding-bottom: 8px;
+}
+
+.down-bar-name{
+text-align: center;
+padding-top: 50px;
+font-size: 15px;
+padding-bottom: 20px;
+font-style: solid;
+}
+
+.down-bar-para{
+text-align: center;
+font-size: 12px;
+font-family: roboto, arial;
+padding-bottom: 9px;
+}
+
+.rights{
+text-align: center;
+font-size: 12px;
+}
